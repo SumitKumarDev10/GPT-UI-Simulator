@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ChatGPT Clone in JavaScript | CodingNepal</title>
+    <link rel="stylesheet" href="static/chat.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="static/chat.js" defer></script>
+  </head>
+  <body>
+    <!-- Chats container -->
+    
+    
+
+    <div class="chat-container">
+        <div class="default-text">
+            <h1>ChatGPT</h1>
+            <p>Start a conversation and explore the power of AI.<br> Your chat history will be displayed here.</p>
+    <div class="chat-side-pane">
+        <button id="new-chat-button">New Chat</button>
+        <div class="chat-sidebar">
+            <h3>Your Chats</h3>
+        </div>
+    </div>
+    <div id="new-chat-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-modal">&times;</span>
+            <h2>New Chat</h2>
+            <form id="new-chat-form">
+                <label for="context">Context:</label>
+                <input type="text" id="context" name="context" placeholder="Enter context">
+
+                <label for="type">Type:</label>
+                <select id="type" name="type">
+                    <option value="ChatGPT4">ChatGPT4</option>
+                    <option value="XYZ">XYZ</option>
+                </select>
+
+                <button type="submit">Start Chat</button>
+            </form>
+        </div>
+    </div>
+        </div>
+    </div>
+    <!-- Typing container -->
+    <div class="typing-container">
+      <div class="typing-content">
+        <div class="typing-textarea">
+          <textarea id="chat-input" spellcheck="false" placeholder="Enter a prompt here" required></textarea>
+          <span id="send-btn" class="material-symbols-rounded">send</span>
+        </div>
+        <div class="typing-controls">
+          <span id="theme-btn" class="material-symbols-rounded">light_mode</span>
+          <span id="delete-btn" class="material-symbols-rounded">delete</span>
+      </div>
+    </div>
+
+  </body>
+</html>
